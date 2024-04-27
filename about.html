@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Reminder - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('cal2.jpeg'); /* Add your background image URL here */
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+
+        header {
+            background-image: url('cal2.jpeg'); /* Add your background image URL here */
+            background-size: cover;
+            color: #fff;
+            text-align: center;
+            font-size: 120%;
+            font-family: 'Arial', sans-serif;
+            padding: 20px 0;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        h1 {
+            color: #000000;
+            font-weight: bold;
+            margin-top: 0;
+        }
+        h2 {
+            color: #0071eb;
+            font-weight: bold;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            padding: 5px 0;
+        }
+
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body onload="displayEvents(); displayContactInfo();">
+    <header>
+        <h1> Calendar Reminder Management</h1>
+    </header>
+    <main>
+        <section class="description">
+            <h2>Description</h2>
+            <p>Calendar reminder is a handy tool to help you organize your schedule and remember important events. With features like event creation, reminders, and notifications, it makes managing your time easier.</p>
+        </section>
+        <section class="benefits">
+            <h2>Benefits</h2>
+            <ul>
+                <li>Stay organized</li>
+                <li>Never miss important events</li>
+                <li>Effortlessly manage your schedule</li>
+            </ul>
+        </section>
+        <section class="features">
+            <h2>Features</h2>
+            <ul>
+                <li>Create and edit events</li>
+                <li>Set reminders and notifications</li>
+                <li>Customize event details</li>
+            </ul>
+        </section>
+        <section class="contact">
+            <h2>Contact</h2>
+            <div id="contact"></div>
+        </section>
+        <section class="events">
+            <h2>Events</h2>
+            <div id="events"></div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Calendar Reminder Reserved</p>
+    </footer>
+    <script src="cal.js"></script>
+</body>
+</html>
